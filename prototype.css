@@ -1,0 +1,14 @@
+body{
+  background-color: #FFF9F4;
+  text-align: center;
+}
+.break {
+  height: 100px;
+}
+.cause{
+  background-color:white;
+  height:300px;
+  width: 1000px;
+  margin: auto;
+  border: 100px, solid transparent;
+}
