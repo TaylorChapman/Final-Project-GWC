@@ -1,14 +1,93 @@
 body{
-  background-color: #FFF9F4;
+  background-image: url("file:///C:/Users/GWC/Desktop/draft.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   text-align: center;
+  background-color: #7ab0c9;
 }
-.break {
+
+.labels{
+  text-align: left;
+  padding: 20px;
+}
+#instructions{
+  font-size: 15px;;
+}
+/* Title */
+#Title{
+  font-size: 40px;
+  color: black;
+  position: relative;
+
+}
+.title{
+
+  position: relative;
   height: 100px;
+  margin-top: 75px;
 }
+/* Menu Bar */
+.menu{
+  position: relative;
+  background-color: transparent;
+  margin-top: 10px;
+  width: 175px;
+  color: white;
+  font-size: 14px;
+  font-family: monospace;
+  border-color: transparent;
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: center;
+
+}
+
+.titlemenue {
+  background-color:black;
+  position: relative;
+  height: 40px;
+
+}
+
+
+/*Causes*/
+.body{
+  position:relative;
+  margin: 30px;
+  background-color: white;
+   background:rgba(255,255,255,0.65);
+
+}
+
+
 .cause{
-  background-color:white;
-  height:300px;
-  width: 1000px;
-  margin: auto;
-  border: 100px, solid transparent;
+  height:50px;
+  width: 200px;
+  position:relative;
+  display: inline-block;
+  font-size: 20px;
+  color: white;
+  border: 5px solid black;
+  height: 150px;
+  width: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#hunger{
+  background-image: url("https://www.vaporfi.com.au/media/catalog/product/cache/34/thumbnail/600x600/9df78eab33525d08d6e5fb8d27136e95/v/z/vz_eliquid_juicy_red_apple.jpg");
+
+}
+
+#deforestation{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYN4WOU29WpHwpalIb-heuS0z7AgcKZBTj1GgACadj9TXJnz2h");
+  margin-left: 50px;
+}
+
+#third{
+  margin-left: 50px;
 }
