@@ -17,7 +17,7 @@ body{
 }
 /* Title */
 #Title{
-  font-size: 40px;
+  font-size: 80px;
   color: black;
   position: relative;
 
@@ -25,17 +25,38 @@ body{
 .title{
 
   position: relative;
-  height: 100px;
-  margin-top: 75px;
+  height: 400px;
+  margin-top: 250px;
 }
 /* Menu Bar */
+#first{
+  position: relative;
+  margin-left: 0;
+}
+#second{
+  position: relative;
+  margin-left: 20%;
+}
+#third{
+  position: relative;
+  margin-left: 40%;
+}
+#fourth{
+  position: relative;
+  margin-left: 60%;
+}
+
+#fifth{
+  position: relative;
+  margin-left: 80%;
+}
 .menu{
   position: relative;
   background-color: transparent;
   margin-top: 10px;
   width: 175px;
   color: white;
-  font-size: 14px;
+  font-size: 20px;
   font-family: monospace;
   border-color: transparent;
   display: inline-block;
