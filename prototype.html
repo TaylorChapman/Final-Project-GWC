@@ -6,6 +6,7 @@
 
 
 <body>
+
   <!--Menu bar -->
   <div class= "titlemenue">
     <a id = "first" class="menu" href= "file:///C:/Users/GWC/Desktop/Final-Project-GWC/donate.html" >Donate</a>
@@ -17,7 +18,7 @@
 
 <!-- Title with background images-->
   <div class= "title">
-    <h1 id="Title">The Ripple Effect</h1>
+    <h1 id="Title">Ripple</h1>
   </div>
 
 <!-- Introduction Paragraph -->
@@ -27,25 +28,40 @@
     <p>Welcome to The Ripple Effect! This site allows anyone and everyone to voice support for causes that are making a difference, while developing ourselves. The squeeze waves before another crisp! The altered professor staggers within a rounding ax. The mathematician taxes the fence. The powder bakes the demonstrated inheritance inside the paperback. Our envelope lends a postscript. The squeeze waves before another crisp! The altered professor staggers within a rounding ax. The mathematician taxes the fence. The powder bakes the demonstrated inheritance inside the paperback. Our envelope lends a postscript.  </p>
   </div>
 <h2 class= "labels">Pick a Cause: </h2>
+
+
+<!-- Causes -->
 <div class= "causes">
 
     <div class = "cause" id= "hunger">
-      <a href="file:///C:/Users/GWC/Desktop/Final-Project-GWC/questions.html">World Hunger</a>
-      <p id="count"> Count: </p>
+      <a href="file:///C:/Users/GWC/Desktop/Final-Project-GWC/options.html">World Hunger</a>
+      <p id="count"> Count: <ul id="countcause1"></ul></p>
     </div>
 
     <div class= "cause" id= "deforestation">
-      <a href="file:///C:/Users/GWC/Desktop/Final-Project-GWC/questions.html">Deforestation</a>
-      <p id="count"> Count: </p>
+      <a href="file:///C:/Users/GWC/Desktop/Final-Project-GWC/options.html">Deforestation</a>
+        <script>
+          var pastcounts = localStorage.getItem("pastcount");
+        </script>
+      <p id="count"> Count: <script> document.write(pastcounts) </script> </p>
     </div>
 
-    <div class = "cause" id= "third">
-      <a href="file:///C:/Users/GWC/Desktop/Final-Project-GWC/questions.html">agr</a>
-      <p id="count"> Count: </p>
+    <div class = "cause" id= "thirdc">
+      <a id= "more">More coming soon!</a>
     </div>
 
   </div>
+    <p id= "label">Click the left and right arrow keys to see more</p>
+  <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
 
 </div>
 

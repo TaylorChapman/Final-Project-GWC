@@ -1,19 +1,31 @@
+
 <head>
   <link rel="stylesheet" href= "prototype.css">
+  <script src="prototype.js"></script>
 </head>
 
-<div class= "titlemenue">
-  <a class="menu" href= "file:///C:/Users/GWC/Desktop/Final-Project-GWC/prototype.html" >Back</a>
-</div>
 
+
+<body>
+
+  <!--Menu bar -->
+  <div class= "titlemenue">
+    <a class= "menu" href= "file:///C:/Users/GWC/Desktop/Final-Project-GWC/options.html" >Back</a>
+  </div>
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
     <meta charset="utf-8" />
     <title>Quiz</title>
 </head>
 <body>
-    <div class= "body">
     <style>
+
+var count1 = 0;
+
+
         .buttons001 {
             background-color: black;
             color: white;
@@ -50,7 +62,7 @@
     </style>
     <div id="frame001">
         <div id="text001">
-            <h2>FOR....</h2>
+            <h2>Geometry</h2>
             Question: <text id="number001">0</text><br />
             Score: <text id="score001">0</text>
         <hr />
@@ -72,50 +84,58 @@
         <script>
         var q = [" What are the center and the radius of the circle whose equation is (x − 5)2 + (y + 3)2 = 16?<br /><br />",
          "The number of degrees in the sum of the interior angles of a pentagon is? <br /><br />",
-          " In scalene triangle ABC, m∠B = 45 and m∠C = 55. What is the order of the sides in length, from longest to shortest?<br /><br />", "What is 4 + 4?<br /><br />", "What is 5 + 5?<br /><br />", "What is 6 + 6?<br /><br />", "What is 7 + 7?<br /><br />", "What is 5 + 1?<br /><br />", "What is 8 + 8?<br /><br />", "What is 9 + 9?<br /><br />"];
+          " In scalene triangle ABC, m∠B = 45 and m∠C = 55. What is the order of the sides in length, from longest to shortest?<br /><br />",
+           "The coordinates of the endpoints of AB are A(0, 0) and B(0, 6). The equation of the perpendicular bisector of AB is<br /><br />",
+           "In a given triangle, the point of intersection of the three medians is the same as the point of intersection of the three altitudes. Which classification of the triangle is correct? <br /><br />",
+            "In FGH, m∠F = 42 and an exterior angle at vertex H has a measure of 104. What is m∠G?<br /><br />",
+            "When solved graphically, what is the solution to the following system of equations? <p> y = x <p> 2 − 4x + 6 <p> y = x + 2<br /><br />",
+             "Which equation of a circle will have a graph that lies entirely in the first quadrant?<br /><br />",
+             "The equation of line k is y = 1/3 x − 2. The equation of line m is −2x + 6y = 18. Lines k and m are<br /><br />",
+             "Plane R is perpendicular to line k and plane D is perpendicular to line k. Which statement is correct?<br /><br />"];
+
         var a1 = ["<button class=buttons002 onclick=q1c()>1) (5, −3) and 4</button>",
-                  "<button class=buttons002 onclick=q2c()>540</button>",
-                  "<button class=buttons002 onclick=q3c()>6</button>",
-                  "<button class=buttons002 onclick=q4i()>13</button>",
-                  "<button class=buttons002 onclick=q5i()>6</button>",
-                  "<button class=buttons002 onclick=q6i()>4</button>",
-                  "<button class=buttons002 onclick=q7i()>8</button>",
-                  "<button class=buttons002 onclick=q8i()>13</button>",
-                  "<button class=buttons002 onclick=q9i()>8</button>",
-                  "<button class=buttons002 onclick=q10i()>14</button>"];
+                  "<button class=buttons002 onclick=q2c()>1) 540</button>",
+                  "<button class=buttons002 onclick=q3c()>1) BC, AB, AC</button>",
+                  "<button class=buttons002 onclick=q4i()>1) y = 0</button>",
+                  "<button class=buttons002 onclick=q5i()>1) scalene triangle</button>",
+                  "<button class=buttons002 onclick=q6i()>1) 34</button>",
+                  "<button class=buttons002 onclick=q7i()>1) (1, 4)</button>",
+                  "<button class=buttons002 onclick=q8c()>1) (x − 4)2 + (y − 5)2 = 9</button>",
+                  "<button class=buttons002 onclick=q9c()>1) parallel</button>",
+                  "<button class=buttons002 onclick=q10i()>1) Plane R is perpendicular to plane D.</button>"];
 
         var a2 = ["<button class=buttons002 onclick=q1i()>2) (5, −3) and 16</button>",
-                  "<button class=buttons002 onclick=q2i()>180</button>",
-                  "<button class=buttons002 onclick=q3i()>2</button>",
-                  "<button class=buttons002 onclick=q4c()>8</button>",
-                  "<button class=buttons002 onclick=q5c()>10</button>",
-                  "<button class=buttons002 onclick=q6c()>12</button>",
-                  "<button class=buttons002 onclick=q7i()>17</button>",
-                  "<button class=buttons002 onclick=q8i()>5</button>",
-                  "<button class=buttons002 onclick=q9i()>17</button>",
-                  "<button class=buttons002 onclick=q10i()>12</button>"];
+                  "<button class=buttons002 onclick=q2i()>2) 180</button>",
+                  "<button class=buttons002 onclick=q3i()>2) AB, BC, AC</button>",
+                  "<button class=buttons002 onclick=q4c()>2) y = 3</button>",
+                  "<button class=buttons002 onclick=()>2) isosceles triangle >",
+                  "<button class=buttons002 onclick=q6c()>2) 62</button>",
+                  "<button class=buttons002 onclick=q7i()>2) (4, 6)</button>",
+                  "<button class=buttons002 onclick=q8i()>2) (x + 4)2 + (y + 5)2 = 9</button>",
+                  "<button class=buttons002 onclick=q9i()>2) perpendicular</button>",
+                  "<button class=buttons002 onclick=q10c()>2) Plane R is parallel to plane D.</button>"];
 
         var a3 = ["<button class=buttons002 onclick=q1i()>3) (−5, 3) and 4</button>",
-                  "<button class=buttons002 onclick=q2i()>72</button>",
-                  "<button class=buttons002 onclick=q3i()>9</button>",
-                  "<button class=buttons002 onclick=q4i()>9</button>",
-                  "<button class=buttons002 onclick=q5i()>7</button>",
-                  "<button class=buttons002 onclick=q6i()>9</button>",
-                  "<button class=buttons002 onclick=q7c()>14</button>",
-                  "<button class=buttons002 onclick=q8c()>6</button>",
-                  "<button class=buttons002 onclick=q9i()>2</button>",
-                  "<button class=buttons002 onclick=q10i()>9</button>"];
+                  "<button class=buttons002 onclick=q2i()>3) 72</button>",
+                  "<button class=buttons002 onclick=q3i()>3) AC, BC, AB</button>",
+                  "<button class=buttons002 onclick=q4i()>3) x = 3</button>",
+                  "<button class=buttons002 onclick=q5i()>3) right isosceles triangle</button>",
+                  "<button class=buttons002 onclick=q6i()>3) 76</button>",
+                  "<button class=buttons002 onclick=q7c()>3) (1, 3) and (4, 6)</button>",
+                  "<button class=buttons002 onclick=q8i()>3) (x + 4)2 + (y + 5)2 = 25</button>",
+                  "<button class=buttons002 onclick=q9i()>3) the same line</button>",
+                  "<button class=buttons002 onclick=q10i()>3) Plane R intersects plane D.</button>"];
 
         var a4 = ["<button class=buttons002 onclick=q1i()>4) (−5, 3) and 16</button>",
-                  "<button class=buttons002 onclick=q2i()>360</button>",
-                  "<button class=buttons002 onclick=q3i()>14</button>",
-                  "<button class=buttons002 onclick=q4i()>1</button>",
-                  "<button class=buttons002 onclick=q5i()>2</button>",
-                  "<button class=buttons002 onclick=q6i()>8</button>",
-                  "<button class=buttons002 onclick=q7i()>2</button>",
-                  "<button class=buttons002 onclick=q8i()>9</button>",
-                  "<button class=buttons002 onclick=q9c()>16</button>",
-                  "<button class=buttons002 onclick=q10c()>18</button>"];
+                  "<button class=buttons002 onclick=q2i()>4) 360</button>",
+                  "<button class=buttons002 onclick=q3i()>4) BC, AC, AB</button>",
+                  "<button class=buttons002 onclick=q4i()>4) x=0</button>",
+                  "<button class=buttons002 onclick=q5c()>4) equilateral triangle</button>",
+                  "<button class=buttons002 onclick=q6i()>4) 146</button>",
+                  "<button class=buttons002 onclick=q7i()>4) (3, 1) and (6, 4)</button>",
+                  "<button class=buttons002 onclick=q8i()>4) (x − 5)2 + (y − 4)2 = 25</button>",
+                  "<button class=buttons002 onclick=q9i()>4) neither parallel nor perpendicular</button>",
+                  "<button class=buttons002 onclick=q10i()>4) Plane R bisects plane D.</button>"];
 
         var c = ["Correct", "Correct", "Correct", "Correct", "Correct", "Correct", "Correct", "Correct", "Correct", "Correct"];
         var i = ["Incorrect", "Incorrect", "Incorrect", "Incorrect", "Incorrect", "Incorrect", "Incorrect", "Incorrect", "Incorrect", "Incorrect"];
@@ -422,7 +442,7 @@
             option002.innerHTML = "";
             option003.innerHTML = "";
             option004.innerHTML = "";
-            next001.innerHTML = "<button class=buttons001 onclick=end001()>End of Quiz</button>";
+            next001.innerHTML = "<button class=buttons001 onclick=end001() onclick=changecount()>End of Quiz</button>";
         }
 
         function end001() {
@@ -440,6 +460,5 @@
             location.reload();
         }
     </script>
-  </div>
 </body>
 </html>

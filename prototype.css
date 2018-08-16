@@ -1,120 +1,163 @@
+/* Overall info */
 body{
-  background-image: url("file:///C:/Users/GWC/Desktop/draft.jpg");
+  background-image: url("");
   background-repeat: no-repeat;
   background-size: 100%, auto;
   background-position: center top;
   background-attachment: fixed;
-  text-align: center;
-  background-color:#cce1ea;
-}
+  background-color:	#99e8e6;}
 
 .labels{
   text-align: left;
   padding: 20px;
 }
+#label{
+  color: transparent;
+}
 #instructions{
   font-size: 15px;;
 }
+
 /* Title */
 #Title{
   font-size: 80px;
-  color: black;
+  color: #212b4f;
   position: relative;
-
+  text-align: center;
+  font-family: georgia;
 }
+
 .title{
-
   position: relative;
-  height: 400px;
-  margin-top: 250px;
-}
+  height: 250px;
+  margin-top: 150px;}
+
+
 /* Menu Bar */
 #first{
-  position: relative;
-  margin-left: 0;
-}
+
+  left: 0;}
+
 #second{
-  position: relative;
-  margin-left: 20%;
+
+  left: 20%;
 }
 #third{
-  position: relative;
-  margin-left: 40%;
+
+  left: 40%;
 }
 #fourth{
-  position: relative;
-  margin-left: 60%;
+  left: 60%;
 }
 
 #fifth{
-  position: relative;
-  margin-left: 80%;
+
+  left: 80%;
 }
 .menu{
-  position: relative;
   background-color: transparent;
   margin-top: 10px;
-  width: 175px;
-  color: white;
+  color: black;
   font-size: 20px;
-  font-family: monospace;
+  font-family: georgia;
   border-color: transparent;
   display: inline-block;
   text-decoration: none;
-  vertical-align: center;
 
 }
 
 .titlemenue {
-  background-color:black;
+  background-color:white;
   position: relative;
   height: 40px;
-
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 
-/*Causes*/
-.body{
-  position:relative;
-  margin: 30px;
-  background-color: white;
-   background:rgba(255,255,255,0.65);
+/*Causes  slideshow */
+  .body{ /* of any text on pages*/
+    position:relative;
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+    background:rgba(255,255,255,0.65);}
 
-}
+  .cause{/*each individual one*/
+    position:relative;
+    font-size: 20px;
+    color: #212b4f;
+    border: 5px solid black;
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display:none;
+    margin: auto;
+  }
 
-
-.cause{
-  height:50px;
-  width: 200px;
-  position:relative;
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
   display: inline-block;
+  transition: background-color 0.6s ease;}
+
+.active, .dot:hover {
+  background-color: #717171;}
+
+  .prev, .next {
+  cursor: pointer;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
   font-size: 20px;
-  color: white;
-  border: 5px solid black;
-  height: 250px;
-  width: 250px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
 }
 
 #count {
-  color: black;
-  margin-top: 87%;
-}
+    color: black;
+    margin-top: 93%;
+  }
 
-#hunger{
-  background-image: url("https://www.vaporfi.com.au/media/catalog/product/cache/34/thumbnail/600x600/9df78eab33525d08d6e5fb8d27136e95/v/z/vz_eliquid_juicy_red_apple.jpg");
+  /*Causesss*/
+    #hunger{
+      background-image: url("https://www.vaporfi.com.au/media/catalog/product/cache/34/thumbnail/600x600/9df78eab33525d08d6e5fb8d27136e95/v/z/vz_eliquid_juicy_red_apple.jpg");
+      display: block;
+    }
 
-}
+    #deforestation{
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYN4WOU29WpHwpalIb-heuS0z7AgcKZBTj1GgACadj9TXJnz2h");
 
-#deforestation{
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYN4WOU29WpHwpalIb-heuS0z7AgcKZBTj1GgACadj9TXJnz2h");
-  margin-left: 100px;
-}
+    }
 
-#third{
-  margin-left: 100px;
-}
+    #thirdc{
+      background-color: white
+    }
+    #more{
+      font-size: 30px;
+      color: black;
+      margin-top: 40px;
+    }
+
+    /*choices for lessons*/
+    .topics{
+      margin-left: 20px;
+    }
+    .choices{
+      text-decoration: none;
+      color: blue;
+      font-size: 18;
+      margin-left: 50px;
+    }
