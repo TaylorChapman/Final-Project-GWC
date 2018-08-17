@@ -1,3 +1,4 @@
+/*
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -30,5 +31,5 @@ function showSlides(n) {
 function changecount(){
   var count1 = 10;
   localStorage.setItem("pastcount", count1);
-}
+}*/
 //count
